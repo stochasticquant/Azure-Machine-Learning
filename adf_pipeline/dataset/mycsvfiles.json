@@ -1,0 +1,23 @@
+{
+	"name": "mycsvfiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "my_excel_file_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "csv-out-put-file",
+				"container": "raw-excel-files"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
