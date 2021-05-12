@@ -1,0 +1,21 @@
+{
+	"name": "MyExcelFiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "my_excel_file_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Persons",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data.xlsx",
+				"container": "raw-excel-files"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
